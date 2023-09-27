@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autenticação por SMS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Autenticação por SMS</h1>
+        <form id="authForm">
+            <input type="tel" id="phoneNumber" placeholder="Número de telefone" required>
+            <button type="button" id="sendCode">Enviar código</button>
+            <input type="text" id="verificationCode" placeholder="Código de verificação" required>
+            <button type="button" id="verifyCode">Verificar código</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="codigoemjs.js"></script>
+</body>
+</html>
